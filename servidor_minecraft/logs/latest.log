@@ -1,0 +1,20 @@
+[17:51:40] [main/INFO]: Loading Minecraft 1.21.11 with Fabric Loader 0.18.2
+[17:51:40] [main/WARN]: Mod resolution failed
+[17:51:40] [main/INFO]: Immediate reason: [HARD_DEP cardboard 12 {depends fabric-api @ [*]}, HARD_DEP_INCOMPATIBLE_PRESELECTED fabric-api 0.138.3+1.21.10 {depends minecraft @ [>=1.21.10- <1.21.11-]}, ROOT_FORCELOAD_SINGLE cardboard 12]
+[17:51:40] [main/INFO]: Reason: [HARD_DEP fabric-api 0.138.3+1.21.10 {depends minecraft @ [>=1.21.10- <1.21.11-]}, HARD_DEP icommon 106+1.21.8 {depends minecraft @ [>=1.21.5- <=1.21.8]}]
+[17:51:40] [main/INFO]: SERVER environment disabled: [fabric-model-loading-api-v1, fabric-renderer-api-v1, fabric-sound-api-v1, fabric-screen-api-v1, fabric-key-binding-api-v1, fabric-rendering-v1, fabric-renderer-indigo]
+[17:51:40] [main/INFO]: Fix: add [], remove [], replace [[minecraft 1.21.11] -> add:minecraft 1.21.10 ([[1.21.10,1.21.11-)])]
+[17:51:40] [main/ERROR]: Incompatible mods found!
+net.fabricmc.loader.impl.FormattedException: Some of your mods are incompatible with the game or each other!
+A potential solution has been determined, this may resolve your problem:
+	 - Replace 'Minecraft' (minecraft) 1.21.11 with any version between 1.21.10 (inclusive) and 1.21.11- (exclusive).
+More details:
+	 - Mod 'Fabric API' (fabric-api) 0.138.3+1.21.10 requires any version between 1.21.10- (inclusive) and 1.21.11- (exclusive) of 'Minecraft' (minecraft), but only the wrong version is present: 1.21.11!
+	 - Mod 'iCommonLib 1.21.8' (icommon) 106+1.21.8 requires any version between 1.21.5- (inclusive) and 1.21.8 (inclusive) of 'Minecraft' (minecraft), but only the wrong version is present: 1.21.11!
+	at net.fabricmc.loader.impl.FormattedException.ofLocalized(FormattedException.java:51)
+	at net.fabricmc.loader.impl.FabricLoaderImpl.load(FabricLoaderImpl.java:202)
+	at net.fabricmc.loader.impl.launch.knot.Knot.init(Knot.java:142)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:66)
+	at net.fabricmc.loader.impl.launch.knot.KnotServer.main(KnotServer.java:23)
+	at net.fabricmc.loader.impl.launch.server.FabricServerLauncher.main(FabricServerLauncher.java:69)
+	at net.fabricmc.installer.ServerLauncher.main(ServerLauncher.java:69)
